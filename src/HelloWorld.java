@@ -1,3 +1,8 @@
+import java.util.Scanner;
+
+import static java.lang.Integer.decode;
+import static java.lang.Integer.getInteger;
+
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -23,9 +28,54 @@ public class HelloWorld {
 //        int three = (int) o;
 //        int three = (int) "three";
 //        System.out.println(three);
-        int x = 4;
-        x = x + 5;
-        System.out.println(x);
+//        int x = 4;
+//        x = x + 5;
+//        System.out.println(x);
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+//        System.out.println(y);
+
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
+//        System.out.println(y);
+
+        Scanner scanner = new Scanner(System.in);
+
+//        System.out.print("Enter something: ");
+//        String userInput = scanner.nextLine();
+//
+//        System.out.println("You entered: --> \"" + userInput + "\" <--");
+//
+//        double pi = 3.14159;
+//        System.out.printf("The value of pi is approximately %s", pi);
+
+//        System.out.println("Enter an integer: ");
+//        int userInt = scanner.nextInt();
+//        System.out.println("You entered: --> \"" + userInt + "\" <--");
+
+//        System.out.print("Enter three words: ");
+//        String wordOne = scanner.next();
+//        String wordTwo = scanner.next();
+//        String wordThree = scanner.next();
+//        System.out.println("You entered: --> \"" + wordOne +" "+ wordTwo+" " +wordThree + "\" <--");
+
+//        System.out.print("Enter a sentence: ");
+//        String sentence = scanner.nextLine();
+////        String wordTwo = scanner.next();
+////        String wordThree = scanner.next();
+//        System.out.println("You entered: --> \"" +sentence + "\" <--");
+
+        System.out.print("Enter length and width: ");
+
+        String lengthAndWidth = scanner.nextLine();
+        String[] numbers = lengthAndWidth.split(" ", 2);
+//        int l = Integer.parseInt(numbers);
+//        System.out.println(l);
+        System.out.println(numbers);
 
     }
 }
