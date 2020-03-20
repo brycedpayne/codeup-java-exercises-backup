@@ -43,39 +43,5 @@ public class HelloWorld {
 //        y = y - x;
 //        System.out.println(y);
 
-        Scanner scanner = new Scanner(System.in);
-
-//        System.out.print("Enter something: ");
-//        String userInput = scanner.nextLine();
-//
-//        System.out.println("You entered: --> \"" + userInput + "\" <--");
-//
-//        double pi = 3.14159;
-//        System.out.printf("The value of pi is approximately %s", pi);
-
-//        System.out.println("Enter an integer: ");
-//        int userInt = scanner.nextInt();
-//        System.out.println("You entered: --> \"" + userInt + "\" <--");
-
-//        System.out.print("Enter three words: ");
-//        String wordOne = scanner.next();
-//        String wordTwo = scanner.next();
-//        String wordThree = scanner.next();
-//        System.out.println("You entered: --> \"" + wordOne +" "+ wordTwo+" " +wordThree + "\" <--");
-
-//        System.out.print("Enter a sentence: ");
-//        String sentence = scanner.nextLine();
-////        String wordTwo = scanner.next();
-////        String wordThree = scanner.next();
-//        System.out.println("You entered: --> \"" +sentence + "\" <--");
-
-        System.out.print("Enter length and width: ");
-
-        String lengthAndWidth = scanner.nextLine();
-        String[] numbers = lengthAndWidth.split(" ", 2);
-//        int l = Integer.parseInt(numbers);
-//        System.out.println(l);
-        System.out.println(numbers);
-
     }
 }
