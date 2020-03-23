@@ -25,9 +25,9 @@ public class ControlFlowExercises {
 //            x *= x;
 //        } while (x <= 1000000);
 
-
-//        for (int i = 0; i <= 100; i++) {
-//            if (i % 3 == 0 && i % 5 ==0) {
+//
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0) {
 //                System.out.println("FizzBuzz");
 //            } else if (i % 3 == 0) {
 //                System.out.println("Fizz");
@@ -36,26 +36,27 @@ public class ControlFlowExercises {
 //            } else {
 //                System.out.println(i);
 //            }
+//        }
         String response;
-//        do {
-//            System.out.println("What number would you like to go up to? ");
-//            int inputNum = input.nextInt();
-//
-//
-//            System.out.println("Here is your table! : ");
-//            System.out.println("\n");
-//            System.out.println("number | squared | cubed");
-//            System.out.println("------ | ------- | -----");
-//            for (int i = 1; i<= inputNum; i++) {
-//                System.out.printf("%-6s | %-7s | %-5s\n", i,i*i,i*i*i);
-//            }
-//
-//            System.out.print("Would you like to enter a new number? (y/n)");
-//            response = input.next();
-//        } while (response.equals("y"));
+        do {
+            System.out.println("What number would you like to go up to? :");
+            int inputNum = input.nextInt();
+
+
+            System.out.println("Here is your table! : ");
+            System.out.println("\n");
+            System.out.println("number | squared | cubed");
+            System.out.println("------ | ------- | -----");
+            for (int i = 1; i<= inputNum; i++) {
+                System.out.printf("%-6d | %-7d | %d\n", i,i*i,i*i*i);
+            }
+
+            System.out.println("Would you like to enter a new number? (y/n)");
+            response = input.next();
+        } while (response.equalsIgnoreCase("y"));
 
         do {
-            System.out.print("What is your grade? (0-100) ");
+            System.out.println("What is your grade? (0-100) :");
             float inputNum = input.nextFloat();
 
 
@@ -94,7 +95,7 @@ public class ControlFlowExercises {
 
             System.out.print("Would you like to enter a new number? (y/n)");
             response = input.next();
-        } while (response.equals("y"));
+        } while (response.equalsIgnoreCase("y"));
 
     }
 }
